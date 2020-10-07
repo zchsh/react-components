@@ -6,6 +6,7 @@ import NavItem from './nav-item'
 import slugify from 'slugify'
 import Link from 'next/link'
 import HASHI_STACK_MENU_ITEMS from './data'
+import { renderToString } from 'react-dom/server'
 
 export default function HashiStackMenu({ onPanelChange }) {
   const [activePanelKey, setActivePanelKey] = useState('')
@@ -51,4 +52,11 @@ function NavMenu({ children }) {
 
 function Logo() {
   return <InlineSvg src={LogoSvg} />
+}
+
+export function CsRenderer({ Component }) {
+  useEffect(() => {
+    console.log(renderToString(<Component />))
+  }, [Component])
+  return null
 }
