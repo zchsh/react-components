@@ -10,7 +10,7 @@ module.exports = {
   },
   language: {
     type: 'options',
-    options: ['ebnf', 'go', 'hcl', 'javascript', 'sentinel', 'shell'],
+    options: ['ebnf', 'go', 'hcl', 'javascript', 'sentinel', 'shell', 'yaml'],
     description: 'A programming language to use for syntax highlighting',
   },
 }

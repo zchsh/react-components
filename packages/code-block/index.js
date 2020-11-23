@@ -7,6 +7,7 @@ import go from 'highlight.js/lib/languages/go'
 import javascript from 'highlight.js/lib/languages/javascript'
 import ruby from 'highlight.js/lib/languages/ruby'
 import shell from 'highlight.js/lib/languages/shell'
+import yaml from 'highlight.js/lib/languages/yaml'
 import sentinel from './languages/sentinel'
 import fragment from './fragment.graphql'
 
@@ -17,6 +18,7 @@ hljs.registerLanguage('hcl', ruby)
 hljs.registerLanguage('javascript', javascript)
 hljs.registerLanguage('sentinel', sentinel)
 hljs.registerLanguage('shell', shell)
+hljs.registerLanguage('yaml', yaml)
 
 class CodeBlock extends Component {
   constructor(props) {
