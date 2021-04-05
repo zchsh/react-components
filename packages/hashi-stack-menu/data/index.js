@@ -88,7 +88,6 @@ export const DEFAULT_MENU_SECTIONS = [
             product: 'consul',
             url: 'https://cloud.hashicorp.com/',
             iconSrc: require('../assets/product-icons/consul-icon-color.svg?include'),
-            badge: 'Generally Available',
           },
           {
             product: 'terraform',
@@ -99,7 +98,6 @@ export const DEFAULT_MENU_SECTIONS = [
             product: 'vault',
             url: 'https://cloud.hashicorp.com/',
             iconSrc: require('../assets/product-icons/vault-icon-color.svg?include'),
-            badge: 'Public Beta',
           },
         ],
       },
